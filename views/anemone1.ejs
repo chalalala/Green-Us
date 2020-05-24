@@ -10,7 +10,7 @@
 		<link href="css/loader.css" rel="stylesheet">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	</head>
-	
+
 	<body>
 		<!-- Panel -->
 		<div id="panel">
@@ -20,74 +20,74 @@
 			<div class="icon"><a href="weather.html"><img src="images/icons/weather.png"></a></div>
 			<div class="icon"><a href="news.html"><img src="images/news.png"></a></div>
 		</div>
-		
+
 		<div id="loader"></div>
 
 		<div id="content">
 			<!-- Image -->
 			<div id="image_box">
-				<div id="photo"><img src="images/Alstroemeria.jpg"></div>
+				<div id="photo"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Anemone_nemorosa_001.JPG"></div>
 				<div id="frame"></div>
 			</div>
-		
+
 			<!-- Info Box -->
 			<div id="info">
 				<!-- Name -->
-				<div id="common_name">Peruvian Lilies</div>
-				
+				<div id="common_name">Anemone</div>
+
 				<!-- Info -->
 				<div class="feature">
 					<div class="feature_names">Other name(s):</div>
-					<div id="name">Alstroemeria</div>
+					<div id="name">Easter Flower, Pasque Flower, Thimbleweed, and Windflower</div>
 				</div>
-				
+
 				<div class="feature">
 					<div class="feature_names">Type:</div>
 					<div id="type">Herb/Forb</div>
 				</div>
-				
+
 				<div class="feature">
 					<div class="feature_names">Difficulty:</div>
 					<div id="difficulty">Easy</div>
 				</div>
-				
+
 				<div class="feature">
 					<div class="feature_names">Planting time:</div>
-					<div id="plant_time">Spring, Autumn</div>
+					<div id="plant_time">Fall</div>
 				</div>
-				
+
 				<div class="feature">
 					<div class="feature_names">Meaning:</div>
-					<div id="meaning">Alstroemeria flower is symbolic of wealth prosperity and fortune. It is also the flower of friendship</div>
+					<div id="meaning">On a darker note indicates fading hope and a feeling of having been forsaken. On a positive note it symbolizes anticipation.  In Greek mythology, anemone flowers are a symbol of the love between Adonis and Aphrodite.</div>
 				</div>
 			</div>
-		
-			<a href="info-2.html"><img src="images/down-arrow.png" id="down_arrow"></a>
-			
+
+			<a href="anemone2.html"><img src="images/down-arrow.png" id="down_arrow"></a>
+
 			<!-- Feedback -->
 			<img src="images/feedback.png" id="feedback_icon" onclick="open_modal('feedback_modal')">
-			
+
 			<div id="feedback_modal" class="modal">
-			
+
 				<div class="modal-content">
 					<span class="close">&times;</span>
 					<h2>Give us your feedback!</h2>
-					
+
 					<form name="submit-to-google-sheet">
 						<textarea id="feedback_content" name="feedback" maxlength="500" required></textarea>
 						<button id="submit_btn" type="submit">Send</button>
 					</form>
 					<p id="response" style="display:none;font-size=20px;">Thanks for your feedback!</p>
 				</div>
-			
+
 			</div>
 		</div>
-		
+
 		<script src="javascript/loader.js"></script>
 		<script src="https://wzrd.in/standalone/formdata-polyfill"></script>
 		<script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
 		<script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
-		
+
 		<script src="javascript/submit_feedback.js"></script>
 		<script src="javascript/feedback_modal.js"></script>
 	</body>

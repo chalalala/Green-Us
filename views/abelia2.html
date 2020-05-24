@@ -8,7 +8,7 @@
 		<link href="css/loader.css" rel="stylesheet">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	</header>
-	
+
 	<body>
 		<!-- Panel -->
 		<div id="panel">
@@ -18,147 +18,147 @@
 			<div class="icon"><a href="weather.html"><img src="images/icons/weather.png"></a></div>
 			<div class="icon"><a href="news.html"><img src="images/news.png"></a></div>
 		</div>
-		
+
 
 		<div id="loader"></div>
 
 		<div id="content">
-			<a href="info.html"><img src="images/up-arrow.png" id="up_arrow"></a>
+			<a href="/abelia"><img src="images/up-arrow.png" id="up_arrow"></a>
 			<div class="column">
 				<div id="planting">
 					<img src="images/icons/planting.png">
 					<div onclick="open_modal('planting_modal',0)">Planting</div>
 				</div>
-				
+
 				<div id="watering">
 					<img src="images/icons/watering.png">
 					<div onclick="open_modal('watering_modal',1)">Watering</div>
 				</div>
-				
+
 				<div id="sun_req">
 					<img src="images/icons/weather.png">
 					<div onclick="open_modal('sun_req_modal',2)">Sun requirement</div>
 				</div>
 			</div>
-			
+
 			<div class="column">
 				<div id="pruning">
 					<img src="images/icons/pruning.png">
 					<div onclick="open_modal('pruning_modal',3)">Pruning and Training</div>
 				</div>
-				
+
 				<div id="propagating">
 					<img src="images/icons/propagating.png">
 					<div onclick="open_modal('propagating_modal',4)">Propagating</div>
 				</div>
-	
+
 				<div id="problem">
 					<img src="images/icons/problems.png">
 					<div onclick="open_modal('problem_modal',5)">Problems</div>
 				</div>
 			</div>
-			
+
 			<!-- Modal -->
 			<div id="planting_modal" class="modal">
-			
+
 				<!-- Modal content -->
 				<div class="modal-content">
 					<span class="close">&times;</span>
 					<h1>Planting</h1>
-					<p>Planting instruction</p>
+					<p>Loosen soil in the planting area and amend with compost. Remove plant from container and gently tease out roots or slice the root ball in several places if potbound. Dig a hole slightly deeper than the root ball and twice as wide. Place the plant in the hole so the top of the root ball is slightly above ground level. Fill in the hole, tamp down soil around the base and water well. Spacing depends on the variety.</p>
 				  </div>
-			
+
 			</div>
-			
+
 			<div id="watering_modal" class="modal">
-			
+
 				<!-- Modal content -->
 				<div class="modal-content">
 					<span class="close">&times;</span>
 					<h1>Watering</h1>
-					<p>Plants are drought tolerant, but watering in dry periods will encourage further flowering</p>
+					<p>Though drought and heat tolerant once established, it performs best with regular watering. Irrigate once or twice a week during summer.</p>
 				  </div>
-			
+
 			</div>
-			
+
 			<div id="sun_req_modal" class="modal">
-			
+
 				<!-- Modal content -->
 				<div class="modal-content">
 					<span class="close">&times;</span>
 					<h1>Sun Requirements</h1>
-					<p>Sun or Partial Shade</p>
+					<p>Sun or Full Sun to Partial Shade</p>
 				  </div>
-			
+
 			</div>
-			
+
 			<div id="pruning_modal" class="modal">
-			
+
 				<!-- Modal content -->
 				<div class="modal-content">
 					<span class="close">&times;</span>
 					<h1>Pruning and Training</h1>
-					<p>Pruning and Training Modal..</p>
+					<p>Abelia looks best when allowed to retain its natural shape and size. Since glossy abelia (A. xgrandiflora) blooms on new wood, prune in late winter to early spring before new growth emerges so that flowers are not sacrificed. Remove any dead or damaged branches, and thin as needed to encourage new shoots. Lightly prune to shape. Some varieties produce long, errant watershoots (thin shoots that grow out of the trunk or branches); cut those out whenever they appear. To reinvigorate your abelia, thin out up to a third of the branches every few years. Deciduous varieties that bloom on old wood (such as A. mosanensis) should be pruned lightly as needed just after flowering.</p>
 				  </div>
-			
+
 			</div>
-			
+
 			<div id="propagating_modal" class="modal">
-			
+
 				<!-- Modal content -->
 				<div class="modal-content">
 					<span class="close">&times;</span>
 					<h1>Propagating</h1>
-					<p>Propagating Modal..</p>
+					<p>Most shrubs can be easily propagated by cuttings, at various times of year: In spring and early summer, take softwood cuttings; In late summer to early autumn, take semi-ripe cuttings; In mid-autumn to late winter, take hardwood cuttings. You can also propagate many shrubs by a simple process called layering.</p>
 				  </div>
-			
+
 			</div>
-			
+
 			<div id="problem_modal" class="modal">
-			
+
 				<!-- Modal content -->
 				<div class="modal-content">
 					<span class="close">&times;</span>
 					<h1>Problems</h1>
-					<p>Problems Modal..</p>
+					<p>When planted in optimal conditions, abelia exhibits few, if any problems. Possible diseases include powdery mildew and anthracnose. Pests include aphids.</p>
 				  </div>
-			
+
 			</div>
-			
+
 			<!-- Feedback -->
 			<img src="images/feedback.png" id="feedback_icon" onclick="open_modal('feedback_modal',6)">
-			
+
 			<div id="feedback_modal" class="modal">
-			
+
 				<div class="modal-content">
 					<span class="close">&times;</span>
 					<h2>Give us your feedback!</h2>
-					
+
 					<form name="submit-to-google-sheet">
 						<textarea id="feedback_content" name="feedback" maxlength="500" required></textarea>
 						<button id="submit_btn" type="submit">Send</button>
 					</form>
 					<p id="response" style="display:none;font-size=20px;">Thanks for your feedback!</p>
 				  </div>
-			
+
 			</div>
 
 		</div>
 
-		
-		
+
+
 		<script src="javascript/loader.js"></script>
 		<script src="https://wzrd.in/standalone/formdata-polyfill"></script>
 		<script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
 		<script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
-		
+
 		<script src="javascript/submit_feedback.js"></script>
-		
+
 		<script>
 			function open_modal(modal_id,span_id){
 				var modal = document.getElementById(modal_id);
 				var span = document.getElementsByClassName("close")[span_id]; // Get the <span> element that closes the modal
-				
+
 				// Open the modal when clicked
 				modal.style.display = "block";
 

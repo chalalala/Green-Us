@@ -1,0 +1,135 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title>GreenUs</title>
+		<link href="css/dictionary.css" rel="stylesheet">
+		<link href="css/panel.css" rel="stylesheet">
+		<link href="css/feedback.css" rel="stylesheet">
+		<link href="css/loader.css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<div id="panel">
+			<div class="icon"><a href="profile.html"><img src="images/avatar.jpg"></a></div>
+			<div class="icon"><a href="/collection"><img src="images/icons/garden.png"></a></div>
+			<div class="icon"><a href="/dictionary"><img src="images/icons/dictionary.png"></a></div>
+			<div class="icon"><a href="weather.html"><img src="images/icons/weather.png"></a></div>
+			<div class="icon"><a href="news.html"><img src="images/news.png"></a></div>
+		</div>
+
+		<div id="loader"></div>
+		<div id="content">
+			<h1>DICTIONARY</h1>
+
+			<div id="data">
+			<div id="tool_panel">
+				<!-- Search Box -->
+				<input type="text" id="search">
+				<img src="images/search.png" width="30px" style="margin-left:5px;cursor:pointer">
+
+				<!-- Sorting -->
+				<select id="sorting" onclick="sort()">
+					<option value="easy-hard">Sort by difficulty (easy-hard)</option>
+					<option value="hard-easy">Sort by difficulty (hard-easy)</option>
+				</select>
+
+				<!-- Display -->
+				<img src="images/display_list.png" width="25px" style="margin-left:10px;margin-right:5px">
+				<img src="images/display_group.png" width="22px">
+			</div>
+
+      <div class="plant"><a href="/abelia"><img src="https://www.fernview.com.au/images/stories/virtuemart/product/Abelia_grandiflo_543740a8e3d0d.jpg"></a></div>
+      <div class="plant"><a href="/african-lily"><img src="https://www.florablom.com/media/catalog/product/cache/4/image/9df78eab33525d08d6e5fb8d27136e95/1/5/1559812027agapanthus_blue_1/agapanthus-blauw-(grootverpakking).jpg"></a></div>
+      <div class="plant"><a href="/agastache"><img src="https://www.florablom.com/media/catalog/product/cache/4/image/9df78eab33525d08d6e5fb8d27136e95/1/5/1510667600agastache_blue_boa_tuincentrum_koeman_1/giant-anise-hyssop-%E2%80%98blue-boa%E2%80%99-(agastache).jpg"></a></div>
+      <div class="plant"><a href="/aloe-vera"><img src="https://i0.wp.com/cdn-prod.medicalnewstoday.com/content/images/articles/318/318591/aloe-vera-plants.jpg?w=1155&h=1541"></a></div>
+      <div class="plant"><a href="/anemone"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Anemone_nemorosa_001.JPG"></a></div>
+      <div class="plant"><a href="info_plant.html"><img src="https://www.almanac.com/sites/default/files/styles/primary_image_in_article/public/images/apple-tree.jpg?itok=yIKBkZnt"></a></div>
+      <div class="plant"><a href="info_plant.html"><img src="https://garden.org/pics/2016-07-09/tveguy3/3bb1a2.jpg"></a></div>
+      <div class="plant"><a href="info_plant.html"><img src="https://www.thespruce.com/thmb/MMzVniYKShDvc8WP-T5Ru3THjOU=/2000x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-980001506-5c92651b46e0fb000155596c.jpg"></a></div>
+      <div class="plant"><a href="info_plant.html"><img src="https://spectrees.s3-ap-southeast-2.amazonaws.com/9389-e78bf5ad6a/conversions/Fagus_sylvatica-small.jpg"></a></div>
+      <div class="plant"><a href="info_plant.html"><img src="https://garden.org/pics/2014-06-02/farmerdill/3f9994.jpg"></a></div>
+      <div class="plant"><a href="info_plant.html"><img src="https://www.rhs.org.uk/getmedia/5b44cc6c-7fa3-442a-9312-8060e1cb3979/Blackberries-556x313.jpg?width=556&height=313"></a></div>
+      <div class="plant"><a href="info_plant.html"><img src="https://www.rhs.org.uk/getmedia/ae87811d-00dd-4898-b668-91cc31b1a103/Blueberries_PUB0004007.jpg?width=556&height=313"></a></div>
+      <div class="plant"><a href="info_plant.html"><img src="https://img.crocdn.co.uk/images/products2/pl/20/00/03/08/pl2000030886.jpg?width=940&height=940"></a></div>
+      <div class="plant"><a href="info_plant.html"><img src="https://www.thespruceeats.com/thmb/vh3pzGIKw5gzZPRXbOLdeX-4-cE=/2127x1409/filters:fill(auto,1)/Headsofgreencabbage-5bfda38346e0fb00264606e3.jpg"></a></div>
+      <div class="plant"><a href="info_plant.html"><img src="https://www.thespruce.com/thmb/RbkB-nQTFLuonDsvVmz7At6-5uw=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/120376721-56a3467e3df78cf7727ca54a.jpg"></a></div>
+      <div class="plant"><a href="info_plant.html"><img src="https://www.thespruce.com/thmb/v1y6I4N2LtkNH3CMeK-fUUeP37Y=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/head-of-cauliflower-658555330-5b39ab28c9e77c0037bbef3e.jpg"></a></div>
+      <div class="plant"><a href="info_plant.html"><img src="https://www.rhs.org.uk/getmedia/b2a51c9c-6105-4159-bebe-7c57d3ceb713/Prunus-avium_PUB0000579.jpg?width=940&height=627&ext=.jpg"></a></div>
+      <div class="plant"><a href="info_plant.html"><img src="https://www.rhs.org.uk/getmedia/b6c8e0a5-cc01-4f18-9182-fc1da27d4cb3/chilli_pepper_MAR0010547.jpg?width=556&height=313"></a></div>
+      <div class="plant"><a href="info_plant.html"><img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Cucumber_of_Bangladesh.jpg"></a></div>
+      <div class="plant"><a href="info_plant.html"><img src="https://cdn.shopify.com/s/files/1/0972/6282/products/mammoth-dill-herbs-pinetree-garden-seeds_621_600x.jpg?v=1542808465"></a></div>
+      <div class="plant"><a href="info_plant.html"><img src="https://www.anniesannuals.com/signs/a/images/abutilon_striatum_bloom.jpg"></a></div>
+      <div class="plant"><a href="info_plant.html"><img src="https://www.rhs.org.uk/getmedia/99ca41fe-a3ec-4edc-bd6c-79428c3df83c/Garlic-bulbs_MAR0002748.jpg?width=556&height=313"></a></div>
+      <div class="plant"><a href="info_plant.html"><img src="https://www.rhs.org.uk/getmedia/42ce5519-1aa6-432d-86d2-45c18bc078f1/Vitis-Boskoop-Glory-_WSYD0012332.jpg?width=940&height=627&ext=.jpg"></a></div>
+      <div class="plant"><a href="info_plant.html"><img src="https://www.thespruce.com/thmb/sIu6Ft4VwAUvroOn6TYj94lHxuo=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/KT-Wonder-Beans-56a34bb75f9b58b7d0d151f2.jpg"></a></div>
+      <div class="plant"><a href="info_plant.html"><img src="https://www.thespruce.com/thmb/y_cl2QtbDsh1AYmFBfgYhABmdf0=/2146x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/orange-hybrid-tea-roses-87986555-5c434d1b46e0fb00013ae931.jpg"></a></div>
+      <div class="plant"><a href="info_plant.html"><img src="https://flowermeanings.org/wp-content/uploads/2018/05/Jasmine-Flower-Meaning-Symbolism-and-Colors.jpg"></a></div>
+      <div class="plant"><a href="info_plant.html"><img src="https://www.rhs.org.uk/getmedia/97611542-7587-44c3-a155-a0e69d5e2e14/kiwifruit-940x627.jpg?width=940&height=627&ext=.jpg"></a></div>
+      <div class="plant"><a href="info_plant.html"><img src="https://www.thompson-morgan.com/static-images/tandm/static-articles/how-to-grow-amaryllis/amaryllis-minerva.jpg"></a></div>
+      <div class="plant"><a href="info_plant.html"><img src="https://www.1800flowers.com/blog/wp-content/uploads/2016/12/field-of-lavender.jpg"></a></div>
+      <div class="plant"><a href="info_plant.html"><img src="https://garden.org/pics/2018-12-17/treehugger/80fd33.jpg"></a></div>
+      <div class="plant"><a href="info_plant.html"><img src="https://www.rhs.org.uk/getmedia/927b33ef-d6ee-49a0-917a-1fb64d5d3682/lemongrass-556x313.jpg?width=556&height=330"></a></div>
+      <div class="plant"><a href="info_plant.html"><img src="https://www.rhs.org.uk/getmedia/1fee8dcd-4bf0-43f5-ac3d-1ffe8a456016/LettuceLittleGem_WSYD0004891-jpg.jpg?width=556&height=313"></a></div>
+      <div class="plant"><a href="info_plant.html"><img src="https://garden.org/pics/2016-04-29/TBGDN/0daf23.jpg"></a></div>
+      <div class="plant"><a href="info_plant.html"><img src="https://gardenerspath.com/wp-content/uploads/2017/04/Fresh-Loofah-Squash.jpg"></a></div>
+      <div class="plant"><a href="info_plant.html"><img src="https://cf.ltkcdn.net/garden/images/orig/214624-2119x1415-Japanese-maple-trees.jpg"></a></div>
+      <div class="plant"><a href="info_plant.html"><img src="https://www.rhs.org.uk/getmedia/f2fb7a90-85d6-4e0b-96ac-45e668f20612/mint.jpg?width=940&height=627&ext=.jpg"></a></div>
+      <div class="plant"><a href="info_plant.html"><img src="https://www.thespruce.com/thmb/MnuzUUFdIEyO_3e_So0E2fw3JUs=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/close-up-of-freshly-picked-onion-bulbs-186366482-5b271d8f43a10300374b2a29.jpg"></a></div>
+      <div class="plant"><a href="info_plant.html"><img src="https://img.crocdn.co.uk/images/products2/pl/00/00/00/14/pl0000001426.jpg?width=940&height=940"></a></div>
+      <div class="plant"><a href="info_plant.html"><img src="https://garden.org/pics/2016-09-02/tveguy3/844ddd.jpg"></a></div>
+      <div class="plant"><a href="info_plant.html"><img src="https://garden.org/pics/2014-02-16/jon/88afe6-300.jpg"></a></div>
+      <div class="plant"><a href="info_plant.html"><img src="https://www.rhs.org.uk/getmedia/e78db8ed-168a-4569-95fd-997fa287d5ce/Capsicum-display_PUB0007109.jpg?width=697&height=940&ext=.jpg"></a></div>
+      <div class="plant"><a href="info_plant.html"><img src="https://www.gardenia.net/storage/app/public/uploads/images/detail/Alstroemeria%20INCA%20ICE2Optimized.jpg"></a></div>
+      <div class="plant"><a href="info_plant.html"><img src="https://garden.org/pics/2019-08-18/dirtdorphins/2fb030.jpg"></a></div>
+      <div class="plant"><a href="info_plant.html"><img src="https://garden.org/pics/2019-02-15/ILPARW/0fc7b3.jpg"></a></div>
+      <div class="plant"><a href="info_plant.html"><img src="https://www.rhs.org.uk/getmedia/556b1f9e-b456-4ba1-bcf3-bf9b908be955/potato-selection940x627.jpg?width=556&height=313"></a></div>
+      <div class="plant"><a href="info_plant.html"><img src="https://garden.org/pics/2015-08-03/farmerdill/507550.jpg"></a></div>
+      <div class="plant"><a href="info_plant.html"><img src="https://www.rhs.org.uk/getmedia/1fc1d77c-31e0-42a2-844e-a151f3355620/Rubus-idaeus-Autumn-Bliss-_WSYD0005788.jpg?width=940&height=627&ext=.jpg"></a></div>
+      <div class="plant"><a href="info_plant.html"><img src="https://www.thespruce.com/thmb/O02u0Y15gdSwLZZruY9oxP8lIJg=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/rugosa-roses--rosa-rugosa---close-up-73898809-5b1d399fba617700378d3520.jpg"></a></div>
+      <div class="plant"><a href="info_plant.html"><img src="https://www.rhs.org.uk/getmedia/8867082f-868a-40dc-b0c3-7605392a0a74/Glycine-max-(soya-bean)-pod_PUB0013431.jpg?width=556&height=313"></a></div>
+      <div class="plant"><a href="info_plant.html"><img src="https://www.rhs.org.uk/getmedia/743086ee-1ff9-448f-bf4c-69f911765cfa/spinach-Emilia3x2.jpg?width=940&height=627&ext=.jpg"></a></div>
+      <div class="plant"><a href="info_plant.html"><img src="https://garden.org/pics/2015-07-26/gardengus/056953.jpg"></a></div>
+      <div class="plant"><a href="info_plant.html"><img src="https://www.almanac.com/sites/default/files/image_nodes/sunflower-1627193_1920.jpg"></a></div>
+      <div class="plant"><a href="info_plant.html"><img src="https://www.gardenclinic.com.au/images/how-to-grow/sweet%20corn%20shutterstock_88410883.jpg"></a></div>
+      <div class="plant"><a href="info_plant.html"><img src="https://www.rhs.org.uk/getmedia/dfb1caff-4da9-4fa7-b234-5664bc69abf5/thyme-556x313.jpg?width=556&height=313"></a></div>
+      <div class="plant"><a href="info_plant.html"><img src="https://www.rhs.org.uk/getmedia/88c682f4-a291-47ee-a5cb-282bd75680ec/Tomkin-British-Tomato-Growers-Association-National-Plant-Societies-Plant-Heritage-Marquee-Tatton-Park-2012-_PUB0024696.jpg?width=940&height=627&ext=.jpg"></a></div>
+      <div class="plant"><a href="info_plant.html"><img src="https://www.thespruce.com/thmb/30o_Fyp9q2eNlm5wMyvPyyIP180=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/colorful-tulip---focus-on-the-highest-479805796-068e46e7e3b94fc3accf956d95736ba3.jpg"></a></div>
+      <div class="plant"><a href="info_plant.html"><img src="https://www.thespruce.com/thmb/13_JW8MD0-qyPI6aBGHpcwW3aD4=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Viola-flowers-1084983_1920-5894c5563df78caebce06cfc.jpg"></a></div>
+      <div class="plant"><a href="info_plant.html"><img src="https://www.thespruce.com/thmb/-E8T46XFwIS1_K8SlSfPUfj6WIA=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Watermelon_SugarBaby-56a349173df78cf7727cb55e.jpg"></a></div>
+      <div class="plant"><a href="info_plant.html"><img src="https://cdn.shopify.com/s/files/1/0011/2341/8172/products/FL3825_Western-Yarrow-Seeds_480x480.jpg?v=1523418113"></a></div>			</div>
+
+			<div id="button">
+			<img src="images/next.png">
+			<img src="images/previous.png">
+			</div>
+
+			<!-- Feedback -->
+			<img src="images/feedback.png" id="feedback_icon" onclick="open_modal('feedback_modal')">
+
+			<div id="feedback_modal" class="modal">
+
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<h2>Give us your feedback!</h2>
+
+				<form name="submit-to-google-sheet">
+					<textarea id="feedback_content" name="feedback" maxlength="500"></textarea>
+					<button id="submit_btn" type="submit">Send</button>
+				</form>
+				<p id="response" style="display:none;font-size=20px;">Thanks for your feedback!</p>
+		  	</div>
+
+		</div>
+
+		</div>
+
+		<script src="javascript/loader.js"></script>
+		<script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+		<script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+		<script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
+
+		<script src="javascript/submit_feedback.js"></script>
+		<script src="javascript/feedback_modal.js"></script>
+	</body>
+</html>

@@ -8,7 +8,7 @@
 		<link href="css/loader.css" rel="stylesheet">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	</header>
-	
+
 	<body>
 		<!-- Panel -->
 		<div id="panel">
@@ -18,147 +18,147 @@
 			<div class="icon"><a href="weather.html"><img src="images/icons/weather.png"></a></div>
 			<div class="icon"><a href="news.html"><img src="images/news.png"></a></div>
 		</div>
-		
+
 
 		<div id="loader"></div>
 
 		<div id="content">
-			<a href="info.html"><img src="images/up-arrow.png" id="up_arrow"></a>
+			<a href="/anemone"><img src="images/up-arrow.png" id="up_arrow"></a>
 			<div class="column">
 				<div id="planting">
 					<img src="images/icons/planting.png">
 					<div onclick="open_modal('planting_modal',0)">Planting</div>
 				</div>
-				
+
 				<div id="watering">
 					<img src="images/icons/watering.png">
 					<div onclick="open_modal('watering_modal',1)">Watering</div>
 				</div>
-				
+
 				<div id="sun_req">
 					<img src="images/icons/weather.png">
 					<div onclick="open_modal('sun_req_modal',2)">Sun requirement</div>
 				</div>
 			</div>
-			
+
 			<div class="column">
 				<div id="pruning">
 					<img src="images/icons/pruning.png">
 					<div onclick="open_modal('pruning_modal',3)">Pruning and Training</div>
 				</div>
-				
+
 				<div id="propagating">
 					<img src="images/icons/propagating.png">
 					<div onclick="open_modal('propagating_modal',4)">Propagating</div>
 				</div>
-	
+
 				<div id="problem">
 					<img src="images/icons/problems.png">
 					<div onclick="open_modal('problem_modal',5)">Problems</div>
 				</div>
 			</div>
-			
+
 			<!-- Modal -->
 			<div id="planting_modal" class="modal">
-			
+
 				<!-- Modal content -->
 				<div class="modal-content">
 					<span class="close">&times;</span>
 					<h1>Planting</h1>
-					<p>Planting instruction</p>
+					<p>Planting Anemones from Tubers:<br/>Tubers should be planted in the fall to bloom the next spring. If you live farther north of the suggested growing area of your selected plant, you will need to wait and plant your anemones in the spring.<br/>To prepare the tubers, soak them in water for eight to 12 hours before planting. You will want to plant the tubers two to four inches deep in the soil and three to six inches apart. The oddly shaped tubers can be placed in the soil facing any direction. There is no distinct top or bottom. Water the soil thoroughly. If you chose not to soak your tubers, make sure you use enough water to soak them thoroughly during this first watering.<br/><br/>Planting Non-Tuber Anemones:<br/>Container-grown anemones with fibrous roots can be planted any time during the growing season but will do best when planted in the spring. Make a hole twice the diameter of the container the plant is in and as deep. Make sure to place plants at least 10 inches apart. Gently remove the plant from the container and place it in the hole. Make sure the top of the root ball is even with the soil. Fill in the soil around the plant, and gently pack it in with your hands. Water thoroughly.</p>
 				  </div>
-			
+
 			</div>
-			
+
 			<div id="watering_modal" class="modal">
-			
+
 				<!-- Modal content -->
 				<div class="modal-content">
 					<span class="close">&times;</span>
 					<h1>Watering</h1>
-					<p>Plants are drought tolerant, but watering in dry periods will encourage further flowering</p>
+					<p>Follow a regular watering schedule to keep the soil moist. The soil should never be overly wet. </p>
 				  </div>
-			
+
 			</div>
-			
+
 			<div id="sun_req_modal" class="modal">
-			
+
 				<!-- Modal content -->
 				<div class="modal-content">
 					<span class="close">&times;</span>
 					<h1>Sun Requirements</h1>
-					<p>Sun or Partial Shade</p>
+					<p>Full to Partial Sun</p>
 				  </div>
-			
+
 			</div>
-			
+
 			<div id="pruning_modal" class="modal">
-			
+
 				<!-- Modal content -->
 				<div class="modal-content">
 					<span class="close">&times;</span>
 					<h1>Pruning and Training</h1>
-					<p>Pruning and Training Modal..</p>
+					<p>Prune plants to soil level in late fall to prepare them for winter. A layer of mulch, straw, or leaves can be added above them to help protect the plants from winter elements.</p>
 				  </div>
-			
+
 			</div>
-			
+
 			<div id="propagating_modal" class="modal">
-			
+
 				<!-- Modal content -->
 				<div class="modal-content">
 					<span class="close">&times;</span>
 					<h1>Propagating</h1>
-					<p>Propagating Modal..</p>
+					<p>Anemone flowers produce seeds. Most home gardeners propagate Anemone by separating the rhizome or tubers, as it is easier. Pre-soak seeds or rhizomes overnight prior to planting.<br/>Plant rhizomes about 1 to 2 inches deep.</p>
 				  </div>
-			
+
 			</div>
-			
+
 			<div id="problem_modal" class="modal">
-			
+
 				<!-- Modal content -->
 				<div class="modal-content">
 					<span class="close">&times;</span>
 					<h1>Problems</h1>
-					<p>Problems Modal..</p>
+					<p>Anemone suffer a variety of plant diseases. Aphids, beetles, and slugs are a common pest. If insect or disease problems occur, treat early with organic or chemical insect repellents and fungicide.</p>
 				  </div>
-			
+
 			</div>
-			
+
 			<!-- Feedback -->
 			<img src="images/feedback.png" id="feedback_icon" onclick="open_modal('feedback_modal',6)">
-			
+
 			<div id="feedback_modal" class="modal">
-			
+
 				<div class="modal-content">
 					<span class="close">&times;</span>
 					<h2>Give us your feedback!</h2>
-					
+
 					<form name="submit-to-google-sheet">
 						<textarea id="feedback_content" name="feedback" maxlength="500" required></textarea>
 						<button id="submit_btn" type="submit">Send</button>
 					</form>
 					<p id="response" style="display:none;font-size=20px;">Thanks for your feedback!</p>
 				  </div>
-			
+
 			</div>
 
 		</div>
 
-		
-		
+
+
 		<script src="javascript/loader.js"></script>
 		<script src="https://wzrd.in/standalone/formdata-polyfill"></script>
 		<script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
 		<script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
-		
+
 		<script src="javascript/submit_feedback.js"></script>
-		
+
 		<script>
 			function open_modal(modal_id,span_id){
 				var modal = document.getElementById(modal_id);
 				var span = document.getElementsByClassName("close")[span_id]; // Get the <span> element that closes the modal
-				
+
 				// Open the modal when clicked
 				modal.style.display = "block";
 

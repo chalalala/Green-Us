@@ -95,10 +95,6 @@ router.get('/profile', function (req, res, next) {
 	});
 });
 
-router.get('/collection', function (req, res, next) {
-	res.render("collection.ejs");
-});
-
 router.get('/logout', function (req, res, next) {
 	console.log("logout")
 	if (req.session) {
@@ -145,4 +141,31 @@ router.post('/forgetpass', function (req, res, next) {
 
 });
 
+router.get('/collection', function (req, res, next) {
+	res.render("collection.ejs");
+});
+
+router.get('/dictionary', function (req, res, next) {
+	res.render("dictionary.ejs");
+});
+
+router.get('/abelia', function (req, res, next) {
+	res.render("abelia1.ejs");
+});
+
+router.get('/african-lily', function (req, res, next) {
+	res.render("africanlily1.ejs");
+});
+
+router.get('/agastache', function (req, res, next) {
+	res.render("agastache1.ejs");
+});
+
+router.get('/aloe-vera', function (req, res, next) {
+	res.render("aloevera1.ejs");
+});
+
+router.get('/anemone', function (req, res, next) {
+	res.render("anemone1.ejs");
+});
 module.exports = router;
