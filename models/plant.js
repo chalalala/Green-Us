@@ -1,6 +1,5 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
-var CreateUpdatedAt = require('mongoose-timestamp');
 
 plantSchema = new Schema( {
   commonname: {
@@ -24,7 +23,6 @@ plantSchema = new Schema( {
   images: String
 });
 
-Plant.plugin(CreateUpdatedAt);
 Plant = mongoose.model('Plant', plantSchema);
 
 module.exports = Plant;

@@ -95,6 +95,10 @@ router.get('/profile', function (req, res, next) {
 	});
 });
 
+router.get('/collection', function (req, res, next) {
+	res.render("collection.ejs");
+});
+
 router.get('/logout', function (req, res, next) {
 	console.log("logout")
 	if (req.session) {
